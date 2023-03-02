@@ -14,3 +14,13 @@ p{
     color: white;
 }
 
+.navbar-brand{
+    color: white;
+    font-size: 35px;
+}
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+}
+
