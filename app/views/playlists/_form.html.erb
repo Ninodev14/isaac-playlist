@@ -10,23 +10,27 @@
       </ul>
     </div>
   <% end %>
-
+<div class="raw">
+<div class="col-3"></div>
   <div>
     <%= form.label :song, style: "display: block" %>
-    <%= form.text_area :song %>
+    <input class="form-control form-control-lg" type="text" placeholder="ecrire nom" aria-label="<%= form.text_area :song %>">
   </div>
 
   <div>
+  
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <input class="form-control form-control-lg" type="text" placeholder="ecrire nom" aria-label="<%= form.text_field :name %>">
+    
   </div>
 
   <div>
-    <%= form.label :image, style: "display: block" %>
-    <%= form.text_area :image %>
+<%= form.label :name, style: "display: block" %>
+    <input class="form-control form-control-lg" type="text" placeholder="ecrire nom" aria-label="<%= form.text_area :image %>">
   </div>
 <div>
-  <div>
-    <%= form.submit %>
+  <div>    
+  <button class="btn btn-primary mb-3" style="margin-top: 2%;" type="<%= form.submit %>Creat Playlist</button>
   </div>
 <% end %>
+</div>
