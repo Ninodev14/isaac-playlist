@@ -1,3 +1,5 @@
+
+
 <%= form_with(model: playlist) do |form| %>
   <% if playlist.errors.any? %>
     <div style="color: red">
@@ -10,27 +12,34 @@
       </ul>
     </div>
   <% end %>
-<div class="raw">
+  <div class="container-fluid">
+
+<div class="row">
 <div class="col-3"></div>
-  <div>
+<div class="col-6">
+  <div class="form">
     <%= form.label :song, style: "display: block" %>
-    <input class="form-control form-control-lg" type="text" placeholder="ecrire nom" aria-label="<%= form.text_area :song %>">
+    <input class="form-control form-control-lg" type="text" placeholder="Donner son..." aria-label="<%= form.text_field :song %>
   </div>
 
-  <div>
+  <div class="form">
   
     <%= form.label :name, style: "display: block" %>
-    <input class="form-control form-control-lg" type="text" placeholder="ecrire nom" aria-label="<%= form.text_field :name %>">
+    <input class="form-control form-control-lg" type="text" placeholder="Ecrire nom..." aria-label="<%= form.text_field :name %>
     
   </div>
 
-  <div>
-<%= form.label :name, style: "display: block" %>
-    <input class="form-control form-control-lg" type="text" placeholder="ecrire nom" aria-label="<%= form.text_area :image %>">
+  <div class="form">
+  
+<%= form.label :image, style: "display: block" %>
+    <input class="form-control form-control-lg" type="text" placeholder="Url de l'image..." aria-label="<%= form.text_field :image %>
   </div>
 <div>
   <div>    
-  <button class="btn btn-primary mb-3" style="margin-top: 2%;" type="<%= form.submit %>Creat Playlist</button>
+  <button class="btn btn-primary mb-3" style="margin-top: 2%; margin-left: 10vw" type="<%= form.submit %>Creat Playlist</button>
   </div>
 <% end %>
+</div>
+<div class="col-3"></div>
+</div>
 </div>
