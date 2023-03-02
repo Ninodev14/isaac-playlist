@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(35, 35, 40    );
 }
 
 h1{
@@ -14,8 +14,3 @@ p{
     color: white;
 }
 
-body{
-    background-image: url(https://cdn.discordapp.com/attachments/1008571023047798794/1080813604686811166/Zephyr6651_dark_empty_room_binding_of_isaac_3215c983-aaf2-4a2b-9ac4-494df7d3fd9e.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
