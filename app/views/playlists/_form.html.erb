@@ -17,23 +17,23 @@
 <div class="row">
 <div class="col-3"></div>
 <div class="col-6">
-  <div class="form">
-    <%= form.label :song, style: "display: block" %>
-    <input class="form-control form-control-lg" type="text" placeholder="Donner son..." aria-label="<%= form.text_field :song %>
-  </div>
 
   <div class="form">
   
     <%= form.label :name, style: "display: block" %>
-    <input class="form-control form-control-lg" type="text" placeholder="Ecrire nom..." aria-label="<%= form.text_field :name %>
-    
+    <input class="form-control form-control-lg" type="text" placeholder="Ecrire la demande ..." aria-label="<%= form.text_field :name %>
   </div>
 
   <div class="form">
-
-<%= form.label :image, style: "display: block" %>
-    <input class="form-control form-control-lg" type="text" placeholder="Url de l'image..." aria-label="<%= form.text_field :image %>
+    <%= form.label :song, style: "display: block" %>
+    <input class="form-control form-control-lg" type="text" placeholder="Donner lien du son..." aria-label="<%= form.text_field :song %>
   </div>
+
+  <div class="form">
+<%= form.label :image, style: "display: block" %>
+    <input class="form-control form-control-lg" type="text"  placeholder="Url de l'image..." aria-label="<%= form.text_field :image %>
+  </div>
+
 <div>
   <div class="form">    
   <button class="btn btn-primary mb-3" type="<%= form.submit %>Creat Playlist</button>
@@ -41,8 +41,5 @@
 <% end %>
 </div>
 <div class="col-3"></div>
-
-
-
 </div>
 </div>
