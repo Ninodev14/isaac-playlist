@@ -17,10 +17,9 @@ h4 {
 
 h3{
     color: white;
-    margin-left: 30%;
-    margin-right: 30%;
     text-align: center;
-    width: 40%
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 p{
