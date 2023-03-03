@@ -1,63 +1,8 @@
-<body>
-<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" style="background-color:rgb(30, 30, 40);">
-  <div class="container-fluid">
-  <img class="logo"
-     src="https://cdn.discordapp.com/attachments/720389355042111609/1081179192508555294/Bernard_cartoon_binding_of_Isaac_with_headphone_74523490-a4a2-41f6-b680-291f84af2951.png"
-     alt="Isaac-logo" width="4%" height="auto">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/playlists" style="color: white;">Accueil</a>
-        </li>
-      </ul>
-      <button class="btn btn-primary me-2" style="margin-left: 83vw; background-color: rgb(35, 35, 40 );"><%= link_to "New playlist", new_playlist_path %></button>
-    </div>
-  </div>
-</nav>
-  <div class="séparation haut" style="margin-top: 10vh">
-  <div class="container-fluid">
-
-<div class="row">
-<div class="col-3"></div>
-<div class="col-6">
-<p style="color: green">
-
 <h1>Editing Song</h1>
 
 <%= render "form", playlist: @playlist %>
 
-<br>
-
 <div>
-  
   <%= link_to "Show this song", @playlist %> |
   <%= link_to "Back to lobby", playlists_path %>
 </div>
-
-</div>
-<div class="col-3"></div>
-</div>
-</div>
-
-<div class="séparation bas" style="margin-top: 10vh">
-
-<footer>
-  <div class="nav justify-content-center" style="padding: 10vh; background-color:rgb(30, 30, 40)">
-  <div class="container-fluid">
-  <div class="row">
-    <div class="col-4">
-    <a class="nav-link" href="/playlists" style="color: #ffffff; text-decoration:underline;"><h4 >Accueil</h4></a>
-    </div>
-    <div class="col-4">
-      <a class="nav-link" href="#" style="color: #ffffff; text-decoration:underline;"><h4 >Mentions Légales</h4></a>
-    </div>
-    <div class="col-4">
-       <a class="nav-link" href="/playlists/new" style="color: #ffffff; text-decoration:underline;"><h4 >New playlist</h4></a>
-    </div>
-    </div>
-    </div>
-  </div>
-</footer>
