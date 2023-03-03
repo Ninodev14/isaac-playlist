@@ -10,6 +10,10 @@ h1{
     color: white;
 }
 
+h3{
+    color: white;
+}
+
 p{
     color: white;
 }
@@ -25,7 +29,7 @@ a:hover{
 
 .separation{
     margin-top: 7vh;
-    margin-bottom: 5vh;
+    margin-bottom: 17vh;
     border-bottom: solid #ffffff;
 
 }
