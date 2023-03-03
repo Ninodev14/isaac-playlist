@@ -7,7 +7,7 @@
     <div class="col-6">
       <div class="d-flex justify-content-around" style=" margin-top: -25vh; margin-left: 4vh;">
           <%= link_to "Edit this playlist", edit_playlist_path(@playlist) %>
-          <button class="btn btn-success"><%= link_to "Back to playlists", playlists_path %></button>
+          <button class="btn btn-primary" style="background-color:rgb(30, 30, 40);"><%= link_to "Back to playlists", playlists_path %></button>
           <%= button_to "Destroy this playlist", @playlist, method: :delete %>
       </div>
     </div> 
