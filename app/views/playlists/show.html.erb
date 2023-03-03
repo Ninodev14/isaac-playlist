@@ -1,10 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @playlist %>
-
-<div>
-  <%= link_to "Edit this playlist", edit_playlist_path(@playlist) %> |
-  <button class="btn btn-success"><%= link_to "Back to playlists", playlists_path %></button>
-
-  <%= button_to "Destroy this playlist", @playlist, method: :delete %>
+<div class="container-fluid"> 
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="d-flex justify-content-around" style=" margin-top: -25vh; margin-left: 4vh;">
+          <%= link_to "Edit this playlist", edit_playlist_path(@playlist) %>
+          <button class="btn btn-success"><%= link_to "Back to playlists", playlists_path %></button>
+          <%= button_to "Destroy this playlist", @playlist, method: :delete %>
+      </div>
+    </div> 
+  <div class="col-3"></div>
+</div>
 </div>
