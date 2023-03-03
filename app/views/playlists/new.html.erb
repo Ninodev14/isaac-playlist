@@ -1,9 +1,18 @@
-<h1>New playlist</h1>
 
+  <div class="container-fluid">
+
+<div class="row">
+<div class="col-3"></div>
+<div class="col-6">
+<h1>New song picture</h1>
 <%= render "form", playlist: @playlist %>
-
-<br>
-
 <div>
-  <button class="btn btn-success"><%= link_to "Back to playlists", playlists_path %></button>
+<br>
+  <button class="btn btn-primary me-2"><%= link_to "Back to playlists", playlists_path %></button>
 </div>
+</div>
+<div class="col-3"></div>
+</div>
+</div>
+
+

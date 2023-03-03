@@ -16,8 +16,15 @@
 
     <img src="<%=playlist.image %>" width="100%" height="auto" style="margin-top: 2vh; margin-bottom: 10vh;">
         <p>
-      <button class="btn btn-primary mb-3"><%= link_to "Show the song picture", playlist %></button>
+        <div>
+        
+  <%= link_to "Edit this playlist", edit_playlist_path(@playlist) %> |
+  <button class="btn btn-primary mb-3"><%= link_to "Back to playlists", playlists_path %></button>
+
+  <%= button_to "Destroy this playlist", @playlist, method: :delete %>
+</div>
     </p>
+    
 </div>
 </div>
 <div class="col-3"></div>
