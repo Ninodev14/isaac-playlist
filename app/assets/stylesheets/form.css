@@ -14,9 +14,19 @@ p{
     color: white;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
 .separation{
-    margin-right: 30vw;
-    background-color: aliceblue;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    border-bottom: solid #ffffff;
 
 }
 

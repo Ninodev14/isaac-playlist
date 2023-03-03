@@ -18,7 +18,7 @@
   </div>
 </nav>
 
-<div>
+
 
 <p style="color: green"><%= notice %></p>
 
@@ -28,13 +28,12 @@
   <% @playlists.each do |playlist| %>
     <%= render playlist %>
     <p>
-    
-      <button class="btn btn-success"><%= link_to "Show this playlist", playlist %></button>
+      <button class="btn btn-primary mb-3"><%= link_to "Show this playlist", playlist %></button>
     </p>
   <% end %>
 </div>
 
-<button class="btn btn-success"><%= link_to "New playlist", new_playlist_path %></button>
+<button class="btn btn-primary mb-3"><%= link_to "New playlist", new_playlist_path %></button>
 
 
 </body>
